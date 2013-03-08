@@ -27,4 +27,3 @@ Feature: Merge Articles
     Then I should see "Successfully merged"
     When I go to the home page
     Then I should see "Ipsum"
-    #And I should not see "Lorem"
