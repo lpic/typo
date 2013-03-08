@@ -1,5 +1,5 @@
 <li id="attachment_<%= attachment_num -%>"<% if hidden %> style="display: none;"<% end %>>
-  <%= file_field 'attachments', "filename_#{attachment_num}" -%>
+  <%= file_field 'attachments', "filename_#{attachment_num}" -%><br />
   <%= link_to_function(_("Remove"),
       update_page do |page|
         page << "if (confirm(_('Really delete attachment') +' #{attachment_num}?')){"
